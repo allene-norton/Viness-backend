@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  spn_id: 1
+  title: MyString
+  avg_rating: 1.5
+  description: MyString
+  image: MyString
+  link: MyString
+  price: MyString
+  rating_count: 1.5
+  score: 1.5
+
+two:
+  spn_id: 1
+  title: MyString
+  avg_rating: 1.5
+  description: MyString
+  image: MyString
+  link: MyString
+  price: MyString
+  rating_count: 1.5
+  score: 1.5
