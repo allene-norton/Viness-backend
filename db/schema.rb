@@ -36,12 +36,12 @@ ActiveRecord::Schema.define(version: 2020_10_11_230218) do
   create_table "wines", force: :cascade do |t|
     t.integer "spn_id"
     t.string "title"
-    t.float "avg_rating"
+    t.float "averageRating"
     t.string "description"
-    t.string "image"
+    t.string "imageUrl"
     t.string "link"
     t.string "price"
-    t.float "rating_count"
+    t.float "ratingCount"
     t.float "score"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

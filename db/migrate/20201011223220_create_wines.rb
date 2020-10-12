@@ -3,12 +3,12 @@ class CreateWines < ActiveRecord::Migration[6.0]
     create_table :wines do |t|
       t.integer :spn_id
       t.string :title
-      t.float :avg_rating
+      t.float :averageRating
       t.string :description
-      t.string :image
+      t.string :imageUrl
       t.string :link
       t.string :price
-      t.float :rating_count
+      t.float :ratingCount
       t.float :score
 
       t.timestamps
