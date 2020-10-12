@@ -5,7 +5,7 @@ class WinesController < ApplicationController
     end
 
     def create
-        # user = User.where(uid: params[:googleId])
+        # user = User.where(uid: user_params[:uid]).first
         wine = Wine.find_or_create_by(
             title: wine_params["title"], 
             spn_id: wine_params["id"],

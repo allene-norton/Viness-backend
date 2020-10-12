@@ -18,5 +18,7 @@ class UsersController < ApplicationController
                 image: res_params["picture"]
             )
         end
+        # cookies[:user_id] = user.id
+        
     end
 end
