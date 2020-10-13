@@ -18,7 +18,9 @@ class WinesController < ApplicationController
             score: wine_params["score"])
             # byebug
         if wine.save 
-            user.wines << wine
+            unless user.wines.include?(wine)
+                user.wines << wine
+            end
         end
         render json: wine
     end
