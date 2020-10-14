@@ -17,6 +17,8 @@ class UsersController < ApplicationController
                 last_name: res_params["family_name"],
                 image: res_params["picture"]
             )
+
+            render json: user
         end 
     end
 end

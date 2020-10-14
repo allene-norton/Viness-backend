@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :comments
   resources :users_wines
   resources :wines
   resources :users
