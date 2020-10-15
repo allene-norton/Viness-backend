@@ -22,6 +22,14 @@ class UsersController < ApplicationController
             render json: user
         end 
     end
+
+    def userwines
+        user = User.where(id: params[:user_id]).first
+        wines = user.wines 
+
+        render json: wines
+    end
+
 end
 
 
