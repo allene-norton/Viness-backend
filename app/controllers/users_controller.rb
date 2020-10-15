@@ -15,7 +15,8 @@ class UsersController < ApplicationController
                 email: res_params["email"],
                 first_name: res_params["given_name"],
                 last_name: res_params["family_name"],
-                image: res_params["picture"]
+                image: res_params["picture"],
+                display_name: res_params["name"]
             )
 
             render json: user
