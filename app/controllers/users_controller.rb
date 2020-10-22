@@ -9,6 +9,7 @@ class UsersController < ApplicationController
         token = params[:id_token]
         auth_response = RestClient.get('https://oauth2.googleapis.com/tokeninfo?id_token=' + token)
         res_params = JSON.parse(auth_response.body)
+        puts res_params
         if res_params["aud"] == Rails.application.credentials[:client_id]
             user = User.find_or_create_by(
                 uid: res_params["sub"],
